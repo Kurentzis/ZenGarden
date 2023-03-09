@@ -1,4 +1,5 @@
-@import 'mixins/colors.scss', 'mixins/fonts.scss', 'mixins/headers.scss', 'mixins/paragraphs.scss', 'mixins/card_mixin.scss';
+@import 'mixins/colors.scss', 'mixins/fonts.scss', 'mixins/headers.scss', 'mixins/paragraphs.scss', 'mixins/card_mixin.scss', 'main.scss';
+
 .select /*front */
 {
     @include card();
