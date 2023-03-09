@@ -1,0 +1,16 @@
+@import 'fonts.scss';
+@import 'colors.scss';
+
+h3{
+    font-family: $heading-font;
+    color: $secondary-color;
+    font-weight: 600;
+    font-size: 64px;
+}
+
+h1{
+    font-family: $header-font-family;
+    color: $primary-color;
+    font-weight: 400;
+    font-size: 128px;
+}

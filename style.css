@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kanit&family=Montserrat&family=Orbitron:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kanit&family=Montserrat&family=Orbitron:wght@600&display=swap");
+h3 {
+  font-family: "Orbitron", sans-serif;
+  color: #56FF67;
+  font-weight: 600;
+  font-size: 64px;
+}
+
+h1 {
+  font-family: "Bebas Neue";
+  color: #F2F6F8;
+  font-weight: 400;
+  font-size: 128px;
+}
+
+p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500px;
+  font-size: 32px;
+}
+
+.select {
+  width: 300px;
+  height: 300px;
+  position: relative;
+  perspective: 500px;
+  border: 1px solid greenyellow;
+  display: inline-block;
+}
+
+/* back-side */
+nav[role=navigation] {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 1s;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  background-color: orchid;
+}
+
+/* front-side  - hover*/
+.design-selection:hover .select {
+  transform: rotateY(180deg);
+  border-radius: 20px;
+}
+
+/* back-side - hover*/
+.design-selection:hover nav[role=navigation] {
+  transform: rotateY(360deg);
+  background-color: black;
+  border-radius: 20px;
+}/*# sourceMappingURL=style.css.map */

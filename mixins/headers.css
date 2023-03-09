@@ -1,0 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kanit&family=Montserrat&family=Orbitron:wght@600&display=swap");
+h3 {
+  font-family: "Orbitron", sans-serif;
+  color: #56FF67;
+  font-weight: 600;
+  font-size: 64px;
+}
+
+h1 {
+  font-family: "Bebas Neue";
+  color: #F2F6F8;
+  font-weight: 400;
+  font-size: 128px;
+}/*# sourceMappingURL=headers.css.map */
