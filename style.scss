@@ -29,21 +29,95 @@
     @include card();
 }
 
+header{
+	display: flex;
+}
+
+
+.sidebar{
+	width: 100%;
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: row; 
+	width: 100%;
+	justify-content: space-around;
+	align-items: center;
+	background: url('Assets/mw.jpeg');
+	background-size: 100% 100%;
+	width: 1919px;
+	height: 1386px;
+}
+
+
+.design-selection{
+	@include card();
+}
+
+.select {
+	@include front-side('Assets/a.jpg');
+}
 /* back-side */
-nav[role="navigation"] { 
-    @include front-back()
+nav[role=navigation] { 
+    @include back-side();
   }
 
   /* front-side  - hover*/
 .design-selection:hover .select  {
-	transform: rotateY(180deg);
-	border-radius: 20px;
+	@include front-side-hover();
 }
 
 /* back-side - hover*/
 .design-selection:hover nav[role="navigation"]  {
-	transform: rotateY(360deg);
-	background-color: black;
-	border-radius: 20px;
+
+	@include back-side-hover();
 	
+}
+
+/* SECOND CARD*/
+.design-archives{
+	@include card();
+}
+
+.archives{
+	@include front-side('Assets/222.jpg');
+}
+
+
+.design-archives>nav[role="navigation"] {
+	@include back-side();
+  }
+
+.design-archives:hover .archives  {
+	@include front-side-hover();
+	
+}
+.design-archives:hover>nav[role="navigation"]  {
+
+	@include back-side-hover();
+}
+
+
+/*Third for you*/
+/* whole card with two sides */
+#zen-resources {
+
+	@include card();
+}
+
+.resources, #zen-resources>ul{
+	@include front-side('Assets/3.jpg');
+}
+
+#zen-resources>ul{
+	@include back-side();
+  }
+
+#zen-resources:hover .resources {
+	@include front-side-hover();
+}
+
+ #zen-resources:hover>ul{
+	@include back-side-hover();
 }
