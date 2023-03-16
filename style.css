@@ -21,9 +21,9 @@ p {
 }
 
 html {
-  width: 1920px;
+  width: 1720px;
   margin: 0 auto;
-  padding: 0;
+  background-color: rgb(31, 30, 30);
 }
 
 header {
@@ -42,7 +42,7 @@ header {
   align-items: center;
   background: url("Assets/mw.jpeg");
   background-size: 100% 100%;
-  width: 1919px;
+  width: 1720px;
   height: 1386px;
 }
 
