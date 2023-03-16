@@ -21,9 +21,9 @@ p {
 }
 
 html {
-  width: 1920px;
+  width: 1720px;
   margin: 0 auto;
-  padding: 0;
+  background-color: rgb(31, 30, 30);
 }
 
 header {
