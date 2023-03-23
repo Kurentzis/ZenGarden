@@ -1,10 +1,36 @@
 @import 'mixins/colors.scss', 'mixins/fonts.scss', 'mixins/headers.scss', 'mixins/paragraphs.scss', 'mixins/card_mixin.scss';
 
 /* Header */
+
+html{
+	background-color: $background-color;
+}
+
 .intro{
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	grid-template-rows: repeat(3, 1fr);
+	position: relative;
+}
+
+.intro{
+    color: #FFFFFF;
+    position: relative;
+    background-image: url(space.png);
+    background-repeat: no-repeat;
+}
+
+
+.banner h1{
+    position: absolute;
+    top: 30%;
+    left: 18%
+}
+
+.banner h2{
+    position: absolute;
+    top: 50%;
+    left: 25%
 }
 
 .banner{
@@ -15,6 +41,8 @@
 .summary{
 	grid-column: 1/3;
 	grid-row: 2;
+	position: absolute;
+    max-width: 350px;
 }
 
 .preamble{
