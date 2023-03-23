@@ -1,7 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kanit&family=Montserrat&family=Orbitron:wght@600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kanit&family=Montserrat&family=Orbitron:wght@600&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kanit&family=Montserrat&family=Orbitron:wght@600&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kanit&family=Montserrat&family=Orbitron:wght@600&display=swap");
 h3 {
   font-family: "Orbitron", sans-serif;
   color: #56FF67;
@@ -22,49 +20,14 @@ p {
   font-size: 32px;
 }
 
-h3 {
-  font-family: "Orbitron", sans-serif;
-  color: #56FF67;
-  font-weight: 600;
-  font-size: 64px;
+html {
+  width: 1720px;
+  margin: 0 auto;
+  background-color: rgb(31, 30, 30);
 }
 
-h1 {
-  font-family: "Bebas Neue";
-  color: #F2F6F8;
-  font-weight: 400;
-  font-size: 128px;
-}
-
-.intro h1 {
-  position: absolute;
-  top: 10%;
-  left: 5%;
-}
-
-.intro h2 {
-  position: absolute;
-  top: 29%;
-  left: 5%;
-}
-
-.summary {
-  position: absolute;
-  top: 55%;
-  left: 5%;
-  max-width: 800px;
-}
-
-.preamble {
-  position: relative;
-  top: 80%;
-  left: 0%;
-  background-color: #292929;
-  padding: 1em 0em 1em 0em;
-}
-
-.main.supporting {
-  margin-top: 20rem;
+header {
+  display: flex;
 }
 
 .sidebar {
@@ -104,12 +67,6 @@ h1 {
   border-radius: 10px;
   opacity: 1;
   transition: opacity 2s;
-}
-
-.design-selection:hover .select.select::before {
-  content: "";
-  opacity: 0;
-  transition: opacity 0.2s;
 }
 
 .select {
@@ -326,25 +283,4 @@ nav[role=navigation] ul {
   transform: rotateY(360deg);
   background-color: black;
   border-radius: 20px;
-}
-
-* {
-  margin: 0px;
-  padding: 0px;
-}
-
-html {
-  background-color: #292929;
-  width: 1720px;
-  height: -moz-fit-content;
-  height: fit-content;
-  margin: 0 auto;
-}
-
-body {
-  background-color: #161514;
-}
-
-.main.supporting {
-  margin-top: 20rem;
 }/*# sourceMappingURL=style.css.map */
