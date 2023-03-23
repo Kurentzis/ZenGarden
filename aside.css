@@ -1,27 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kanit&family=Montserrat&family=Orbitron:wght@600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kanit&family=Montserrat&family=Orbitron:wght@600&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kanit&family=Montserrat&family=Orbitron:wght@600&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kanit&family=Montserrat&family=Orbitron:wght@600&display=swap");
-h3 {
-  font-family: "Orbitron", sans-serif;
-  color: #56FF67;
-  font-weight: 600;
-  font-size: 64px;
-}
-
-h1 {
-  font-family: "Bebas Neue";
-  color: #F2F6F8;
-  font-weight: 400;
-  font-size: 128px;
-}
-
-p {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 500px;
-  font-size: 32px;
-}
-
 h3 {
   font-family: "Orbitron", sans-serif;
   color: #56FF67;
@@ -299,25 +277,4 @@ nav[role=navigation] ul {
   transform: rotateY(360deg);
   background-color: black;
   border-radius: 20px;
-}
-
-* {
-  margin: 0px;
-  padding: 0px;
-}
-
-html {
-  background-color: #292929;
-  width: 1720px;
-  height: -moz-fit-content;
-  height: fit-content;
-  margin: 0 auto;
-}
-
-body {
-  background-color: #161514;
-}
-
-.main.supporting {
-  margin-top: 20rem;
-}/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=aside.css.map */
