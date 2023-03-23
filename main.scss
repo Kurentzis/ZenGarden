@@ -1,2 +1,18 @@
 /* Andrew Wright's section */
 /*Test 1,2,3*/
+@import 'mixins/colors.scss', 'mixins/fonts.scss', 'mixins/headers.scss', 'mixins/paragraphs.scss', 'mixins/card_mixin.scss', 'main.scss';
+
+.main.supporting {
+    /*box*/
+    position: absolute;
+    width: 1848px;
+    height: 4996px;
+    left: 35px;
+    top: 30px;
+
+    border: 5px solid #58FF67;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+
+    display: flex;
+}
