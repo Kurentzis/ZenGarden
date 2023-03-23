@@ -36,10 +36,35 @@ h1 {
   font-size: 128px;
 }
 
-p {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 500px;
-  font-size: 32px;
+.intro h1 {
+  position: absolute;
+  top: 10%;
+  left: 5%;
+}
+
+.intro h2 {
+  position: absolute;
+  top: 29%;
+  left: 5%;
+}
+
+.summary {
+  position: absolute;
+  top: 55%;
+  left: 5%;
+  max-width: 800px;
+}
+
+.preamble {
+  position: relative;
+  top: 80%;
+  left: 0%;
+  background-color: #292929;
+  padding: 1em 0em 1em 0em;
+}
+
+.main.supporting {
+  margin-top: 20rem;
 }
 
 .sidebar {
