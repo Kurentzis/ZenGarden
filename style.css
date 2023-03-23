@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kanit&family=Montserrat&family=Orbitron:wght@600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kanit&family=Montserrat&family=Orbitron:wght@600&display=swap");
+@import 'main.css';
+@import 'header.css';
 h3 {
   font-family: "Orbitron", sans-serif;
   color: #56FF67;
@@ -21,7 +23,7 @@ p {
 }
 
 html {
-  width: 1720px;
+  width: 1200px;
   margin: 0 auto;
   background-color: rgb(31, 30, 30);
 }
@@ -42,15 +44,16 @@ header {
   align-items: center;
   background: url("Assets/mw.jpeg");
   background-size: 100% 100%;
-  width: 1720px;
-  height: 1386px;
+  width: 1200px;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 
 .design-selection {
-  width: 400px;
-  height: 600px;
+  width: 300px;
+  height: 400px;
   position: relative;
-  perspective: 500px;
+  perspective: 300px;
   display: inline-block;
   border-radius: 20px;
 }
@@ -133,10 +136,10 @@ nav[role=navigation] ul {
 
 /* ---------SECOND CARD*----------------*/
 .design-archives {
-  width: 400px;
-  height: 600px;
+  width: 300px;
+  height: 400px;
   position: relative;
-  perspective: 500px;
+  perspective: 300px;
   display: inline-block;
   border-radius: 20px;
 }
@@ -210,10 +213,10 @@ nav[role=navigation] ul {
 /*----------------------Third for you*----------------------/
 /* whole card with two sides */
 #zen-resources {
-  width: 400px;
-  height: 600px;
+  width: 300px;
+  height: 400px;
   position: relative;
-  perspective: 500px;
+  perspective: 300px;
   display: inline-block;
   border-radius: 20px;
 }

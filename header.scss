@@ -1,5 +1,4 @@
-@import 'mixins/colors.scss', 'mixins/fonts.scss', 'mixins/headers.scss', 'mixins/paragraphs.scss', 'mixins/card_mixin.scss', 'aside.scss',
-'header.scss', 'main.scss';
+@import 'mixins/colors.scss', 'mixins/fonts.scss', 'mixins/headers.scss', 'mixins/paragraphs.scss', 'mixins/card_mixin.scss';
 
 /*--------------------- Header---------------- */
 .intro{
@@ -7,28 +6,28 @@
 	background-repeat: no-repeat;
 	background-size: 100% 95%;
 	color: $primary-color;
-	width: 1720px;
-	height: 1386px;
+	width: 1200px;
+	height: fit-content;
 	//position: relative;
 }
 
-.intro h1{
-	position: absolute;
-	top: 10%;
-	left: 5%;
-}
+// .intro h1{
+// 	position: absolute;
+// 	top: 10%;
+// 	left: 5%;
+// }
 
-.intro h2{
-	position: absolute;
-	top: 29%;
-	left: 5%;
-}
-.summary{
-	position: absolute;
-	top: 55%;
-	left: 5%;
-	max-width: 800px;
-}
+// .intro h2{
+// 	position: absolute;
+// 	top: 29%;
+// 	left: 5%;
+// }
+// .summary{
+// 	position: absolute;
+// 	top: 55%;
+// 	left: 5%;
+// 	max-width: 800px;
+// }
 
 .preamble{
 	position: relative;

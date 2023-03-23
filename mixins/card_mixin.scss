@@ -1,8 +1,8 @@
 @mixin card() {
-	width: 400px;
-	height: 600px;
+	width: 300px;
+	height: 400px;
 	position: relative;
-	perspective: 500px;
+	perspective: 300px;
 
 	display:inline-block;
 	border-radius: 20px;
