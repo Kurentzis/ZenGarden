@@ -1,0 +1,38 @@
+@import 'mixins/colors.scss', 'mixins/fonts.scss', 'mixins/headers.scss', 'mixins/paragraphs.scss', 'mixins/card_mixin.scss';
+
+/*--------------------- Header---------------- */
+.intro{
+	background: url(./Assets/header.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% 95%;
+	color: $primary-color;
+	width: 1200px;
+	height: fit-content;
+	//position: relative;
+}
+
+// .intro h1{
+// 	position: absolute;
+// 	top: 10%;
+// 	left: 5%;
+// }
+
+// .intro h2{
+// 	position: absolute;
+// 	top: 29%;
+// 	left: 5%;
+// }
+// .summary{
+// 	position: absolute;
+// 	top: 55%;
+// 	left: 5%;
+// 	max-width: 800px;
+// }
+
+.preamble{
+	position: relative;
+	top: 80%;
+	left: 0%;
+	background-color: $background-color;
+	padding: 1em 0em 1em 0em;
+}
