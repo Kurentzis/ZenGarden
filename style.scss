@@ -1,16 +1,13 @@
-@import 'mixins/colors.scss', 'mixins/fonts.scss', 'mixins/headers.scss', 'mixins/paragraphs.scss', 'mixins/card_mixin.scss', 'header.scss';
-
-
-html{
-	background-color: $background-color;
+@import 'mixins/colors.scss', 'mixins/fonts.scss', 'mixins/headers.scss', 'mixins/paragraphs.scss', 'mixins/card_mixin.scss', 'main.scss';
+html {
 	width: 1720px;
-	height: 1386px;
+	margin: 0 auto;
+	background-color: rgb(31, 30, 30);
 }
 
 
-
-.main.supporting{
-	margin-top: 20rem;
+header{
+	display: flex;
 }
 
 
@@ -49,13 +46,13 @@ html{
 		transition: opacity 2s;
 	}
 }
-.design-selection:hover .select{
-	&.select::before{
-		content: '';
-		opacity: 0;
-		transition: opacity 0.2s;
-	}
-}
+// .design-selection:hover .select{
+// 	&.select::before{
+// 		content: '';
+// 		opacity: 0;
+// 		transition: opacity 0.2s;
+// 	}
+// }
 
 
 
@@ -64,6 +61,7 @@ html{
 	color: #F0A738;
 	font-size: 34px;
 	z-index: 1;
+	text-shadow: -5px 4px 0px rgba(0, 0, 0, 0.6);
 }
 
 
@@ -71,6 +69,18 @@ html{
 /* back-side */
 nav[role=navigation] { 
     @include back-side();
+  }
+
+  nav[role=navigation]  a {
+
+	font-size: 25px;
+	text-decoration: none;
+	color: aliceblue;
+  }
+
+  
+  nav[role=navigation] ul{
+	list-style: none;
   }
 
 
@@ -111,6 +121,7 @@ nav[role=navigation] {
 	color: #F0A738;
 	font-size: 34px;
 	z-index: 1;
+	text-shadow: -5px 4px 0px rgba(0, 0, 0, 0.6);
 }
 
 .design-archives .archives{
@@ -182,6 +193,7 @@ nav[role=navigation] {
 		border-radius: 10px;
 		opacity: 1;
 		transition: opacity 2s;
+		
 	}
 }
 
@@ -197,6 +209,7 @@ nav[role=navigation] {
 	color: #F0A738;
 	font-size: 34px;
 	z-index: 1;
+	text-shadow: -5px 4px 0px rgba(0, 0, 0, 0.6);
 }
 
 #zen-resources ul{
