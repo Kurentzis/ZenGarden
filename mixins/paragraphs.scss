@@ -4,4 +4,11 @@ p{
     font-weight: 500;
     font-size: 22px;
     color: $primary-color;
+    letter-spacing: 3px;
+}
+
+a {
+    color: #6fffe9;
+    text-decoration: dashed;
+    font-family: $heading-font;
 }
