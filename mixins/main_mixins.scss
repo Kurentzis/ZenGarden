@@ -1,0 +1,24 @@
+@mixin wrapper($a_cols, $a_rows) {
+	background-color: $background-color;
+	display: grid;
+	height: fit-content;
+    padding-top: 50px;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: repeat(2, min-max(100px, auto));
+}
+
+@mixin header($marg) {
+    max-width: 400px;
+    text-align: center;
+    grid-column: 1;
+    grid-row: 1;
+    align-self: flex-start;
+    margin-top: $marg;
+}
+
+@mixin paragraph_mixin($col, $row) {
+    grid-column: $col;
+    grid-row: $row;
+    margin-right: 50px;
+
+}
