@@ -24,6 +24,7 @@ $card_bg_header_height: 70px;
 	&.select::before{
 		content: '';
 		position: absolute;
+		margin: 0 auto;
 		background-color: rgba(217, 217, 217, 0.4);
 		backdrop-filter: blur(2px);
 		width: $card_bg_header_width;
@@ -40,10 +41,6 @@ $card_bg_header_height: 70px;
 		opacity: 0;
 		transition: opacity 0.2s;
 	}
-}
-
-.design-selection>.select>h3{
-	margin-top: 100px;
 }
 
 

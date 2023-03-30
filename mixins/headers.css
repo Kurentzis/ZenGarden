@@ -2,13 +2,25 @@
 h3 {
   font-family: "Orbitron", sans-serif;
   color: #56FF67;
-  font-weight: 600;
-  font-size: 64px;
+  font-family: "Orbitron";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+}
+
+h2 {
+  font-family: "Orbitron", sans-serif;
+  color: #F2F6F8;
+  font-weight: 400;
+  font-size: 2vw;
+  letter-spacing: -0.0022em;
+  margin-top: 33px;
 }
 
 h1 {
   font-family: "Bebas Neue";
   color: #F2F6F8;
-  font-weight: 400;
-  font-size: 128px;
+  font-weight: 600;
+  font-size: 5vw;
+  letter-spacing: -0.025em;
 }/*# sourceMappingURL=headers.css.map */

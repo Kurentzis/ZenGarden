@@ -3,38 +3,64 @@
 h3 {
   font-family: "Orbitron", sans-serif;
   color: #56FF67;
-  font-weight: 600;
-  font-size: 64px;
+  font-family: "Orbitron";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+}
+
+h2 {
+  font-family: "Orbitron", sans-serif;
+  color: #F2F6F8;
+  font-weight: 400;
+  font-size: 2vw;
+  letter-spacing: -0.0022em;
+  margin-top: 33px;
 }
 
 h1 {
   font-family: "Bebas Neue";
   color: #F2F6F8;
-  font-weight: 400;
-  font-size: 128px;
+  font-weight: 600;
+  font-size: 5vw;
+  letter-spacing: -0.025em;
 }
 
 p {
+  display: inline;
   font-family: "Montserrat", sans-serif;
-  font-weight: 500px;
-  font-size: 32px;
+  font-weight: 500;
+  font-size: 22px;
+  color: #F2F6F8;
 }
 
 /*--------------------- Header---------------- */
 .intro {
-  background: url(./Assets/header.jpg);
-  background-repeat: no-repeat;
-  background-size: 100% 95%;
+  max-width: 1200px;
+  min-height: 850px;
   color: #F2F6F8;
-  width: 1200px;
-  height: -moz-fit-content;
-  height: fit-content;
+  max-width: 1200px;
+  min-height: 849px;
 }
 
-.preamble {
-  position: relative;
-  top: 80%;
-  left: 0%;
-  background-color: #292929;
-  padding: 1em 0em 1em 0em;
+header {
+  max-width: 1200px;
+  min-height: 850px;
+  background-image: url(../Assets/header2.png);
+  background-size: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-clip: initial;
+  background-repeat: no-repeat;
+}
+
+.summary {
+  margin-left: 100px;
+  margin-top: 30vw;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  max-width: 800px;
+  line-height: 150%;
 }/*# sourceMappingURL=header.css.map */

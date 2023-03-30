@@ -1,5 +1,7 @@
 p{
+    display: inline;
     font-family: $paragraph-font;
-    font-weight: 500px;
-    font-size: 32px;
+    font-weight: 500;
+    font-size: 22px;
+    color: $primary-color;
 }

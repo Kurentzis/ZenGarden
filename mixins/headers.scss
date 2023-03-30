@@ -4,13 +4,25 @@
 h3{
     font-family: $heading-font;
     color: $secondary-color;
-    font-weight: 600;
-    font-size: 64px;
+    font-family: 'Orbitron';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    // line-height: 150%;
+}
+h2{
+    font-family: $heading-font;
+    color: $primary-color;
+    font-weight: 400;
+    font-size: 2vw;
+    letter-spacing: -0.0022em;
+    margin-top: 33px;
 }
 
 h1{
     font-family: $header-font-family;
     color: $primary-color;
-    font-weight: 400;
-    font-size: 128px;
+    font-weight: 600;
+    font-size: 5vw;
+    letter-spacing: -0.025em;
 }
