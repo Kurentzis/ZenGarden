@@ -58,11 +58,13 @@ header {
   min-height: 850px;
   background-image: url(../Assets/header3.png);
   background-size: 100%;
+  background-repeat: no-repeat;
   -o-object-fit: cover;
      object-fit: cover;
   background-clip: initial;
   -webkit-backdrop-filter: brightness(0.6) contrast(120%);
           backdrop-filter: brightness(0.6) contrast(120%);
+  border-bottom: 3px solid #292929;
 }
 
 .summary {
@@ -88,7 +90,7 @@ header {
   padding-top: 50px;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: repeat(2, min-max(100px, auto));
-  border: 5px solid green;
+  border: 5px solid rgb(79, 239, 79);
   border-bottom: none;
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;

@@ -17,9 +17,11 @@ header {
 	min-height: 850px;
 	background-image: url(../Assets/header3.png);
 	background-size: 100%;
+	background-repeat: no-repeat;
 	object-fit: cover;
 	background-clip:initial;
 	backdrop-filter: brightness(0.6) contrast(120%);
+	border-bottom: 3px solid #292929;
 	
 
 	//opacity: .6;
@@ -59,7 +61,7 @@ header {
 	// grid-template-columns: 1fr 1fr;
 	// grid-template-rows: minmax(100px, auto)  minmax(100px, auto)  minmax(100px, auto);
 	@include wrapper(1fr 1fr, repeat(3, min-max(100px, auto)));
-	border: 5px solid green;
+	border: 5px solid rgb(79, 239, 79);
 	border-bottom:  none;
 	border-top-right-radius: 10px;
 	border-top-left-radius: 10px;
