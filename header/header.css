@@ -210,4 +210,8 @@ header h1 {
     padding-left: 20px;
     font-size: 15px;
   }
+  .summary {
+    font-size: 8px;
+    margin: 80px;
+  }
 }/*# sourceMappingURL=header.css.map */
