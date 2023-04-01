@@ -28,10 +28,23 @@ h1 {
   font-weight: 600;
   font-size: 6vw;
   letter-spacing: -0.025em;
-  padding-top: 200px;
-  padding-left: 100px;
 }
 
+@media only screen and (max-width: 64em) {
+  h3 {
+    font-size: 26px;
+  }
+}
+@media only screen and (max-width: 48em) {
+  h3 {
+    font-size: 22px;
+  }
+}
+@media only screen and (min-width: 40em) {
+  h3 {
+    font-size: 22px;
+  }
+}
 p {
   display: inline;
   font-family: "Montserrat", sans-serif;
@@ -48,6 +61,20 @@ a {
   font-family: "Orbitron", sans-serif;
 }
 
+@media only screen and (max-width: 48em) {
+  p {
+    font-weight: 400;
+    font-size: 15px;
+    letter-spacing: 2px;
+  }
+  a {
+    color: #6fffe9;
+    -webkit-text-decoration: dashed;
+            text-decoration: dashed;
+    font-family: "Orbitron", sans-serif;
+    font-size: 15px;
+  }
+}
 .main {
   border: 5px solid #56FF67;
   border-top: none;
@@ -56,13 +83,14 @@ a {
 }
 
 .explanation {
-  background-color: #292929;
   display: grid;
-  height: -moz-fit-content;
-  height: fit-content;
+  background-color: #292929;
   padding-top: 50px;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: repeat(2, min-max(100px, auto));
+  display: grid;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 .explanation h3 {
   max-width: 400px;
@@ -76,7 +104,6 @@ a {
   grid-column: 2;
   grid-row: 1;
   margin-right: 50px;
-  margin-right: 50px;
 }
 .explanation p:nth-child(3) {
   grid-column: 2;
@@ -85,13 +112,14 @@ a {
 }
 
 .participation {
-  background-color: #292929;
   display: grid;
-  height: -moz-fit-content;
-  height: fit-content;
+  background-color: #292929;
   padding-top: 50px;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: repeat(2, min-max(100px, auto));
+  display: grid;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 .participation h3 {
   max-width: 400px;
@@ -118,13 +146,14 @@ a {
 }
 
 .benefits {
-  background-color: #292929;
   display: grid;
-  height: -moz-fit-content;
-  height: fit-content;
+  background-color: #292929;
   padding-top: 50px;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: repeat(2, min-max(100px, auto));
+  display: grid;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 .benefits h3 {
   max-width: 400px;
@@ -141,13 +170,14 @@ a {
 }
 
 .requirements {
-  background-color: #292929;
   display: grid;
-  height: -moz-fit-content;
-  height: fit-content;
+  background-color: #292929;
   padding-top: 50px;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: repeat(2, min-max(100px, auto));
+  display: grid;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 .requirements h3 {
   max-width: 400px;
@@ -179,4 +209,74 @@ a {
 }
 .requirements p:nth-child(6) {
   display: none;
+}
+
+@media only screen and (max-width: 48em) {
+  .explanation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .explanation h3 {
+    align-self: center;
+    margin: 20px;
+  }
+  .explanation p:nth-child(2) {
+    margin: 0px 50px 0px 50px;
+  }
+  .explanation p:nth-child(3) {
+    margin: 0px 50px 0px 50px;
+  }
+  .participation {
+    display: flex;
+    flex-direction: column;
+  }
+  .participation h3 {
+    align-self: center;
+    margin: 20px;
+  }
+  .participation p:nth-child(2) {
+    margin: 0px 50px 0px 50px;
+  }
+  .participation p:nth-child(3) {
+    margin: 0px 50px 0px 50px;
+  }
+  .participation p:nth-child(4) {
+    margin: 0px 50px 0px 50px;
+  }
+  .benefits {
+    display: flex;
+    flex-direction: column;
+  }
+  .benefits h3 {
+    align-self: center;
+    margin: 20px;
+  }
+  .benefits p:nth-child(2) {
+    margin: 0px 50px 0px 50px;
+  }
+  .requirements {
+    display: flex;
+    flex-direction: column;
+  }
+  .requirements h3 {
+    align-self: center;
+    margin: 20px;
+  }
+  .requirements p:nth-child(2) {
+    margin: 0px 50px 0px 50px;
+  }
+  .requirements p:nth-child(3) {
+    margin: 0px 50px 0px 50px;
+  }
+  .requirements p:nth-child(4) {
+    margin: 0px 50px 0px 50px;
+  }
+  .requirements p:nth-child(5) {
+    margin: 0px 50px 0px 50px;
+  }
+  .requirements p:nth-child(6) {
+    display: none;
+  }
 }/*# sourceMappingURL=main.css.map */

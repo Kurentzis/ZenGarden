@@ -28,6 +28,8 @@ header {
 		height: 150px;
 		letter-spacing: 5px;
 		animation: glow 1s ease-in-out infinite alternate;
+		padding-top: 200px;
+		padding-left: 100px;
 
 		@keyframes glow {
 			from {
@@ -64,18 +66,12 @@ header {
 	p {
 		font-family: $heading-font;
 		font-style: normal;
-		// font-weight: 500;
-		// font-size: 22px;
 		line-height: 150%;
 	}
 
 }
 
 #zen-preamble {
-	// display: grid;
-	// height: fit-content;
-	// grid-template-columns: 1fr 1fr;
-	// grid-template-rows: minmax(100px, auto)  minmax(100px, auto)  minmax(100px, auto);
 	@include wrapper(1fr 1fr, repeat(3, min-max(100px, auto)));
 	border: 5px solid rgb(79, 239, 79);
 	border-bottom:  none;
@@ -83,20 +79,9 @@ header {
 	border-top-right-radius: 10px;
 	border-top-left-radius: 10px;
 
-	@media (max-width:650px) {
-		grid-template-columns: 1fr;
-		grid-template-rows: 1fr 1fr;
-		text-align: center;
-		padding: 0px 10px;
-	}
-
 
 	h3 {
-		// max-width: 400px;
-		// text-align: center;
-		// grid-column: 1;
-		// grid-row: 1;
-		// margin-top: 50px;
+
 		@include header(50px);
 	}
 
@@ -123,4 +108,71 @@ header {
 
 
 
+}
+
+
+
+@media only screen and (max-width: 64em) {
+	header {
+		min-height: 500px;
+		h1 {
+			padding-top: 100px;
+		}
+	}
+
+
+	
+}
+
+
+@media only screen and (max-width: 48em) {
+	header {
+		min-height: 450px;
+		h1 {
+			padding-top: 100px;
+		}
+	}
+	#zen-preamble {
+		display: flex;
+		flex-direction: column;
+		align-content: center;
+		justify-items: center;
+		
+	h3 {
+		margin:  0px 50px 20px 50px;
+		align-self: center;
+	}
+
+	p:nth-child(2) {
+		margin:  0px 50px 0px 50px;
+
+	}
+
+	p:nth-child(3) {
+		margin:  0px 50px 0px 50px;
+	}
+
+	p:nth-child(4) {
+		margin:  0px 50px 0px 50px;
+	}
+	}
+
+	
+}
+
+@media only screen and (max-width: 40em) {
+	header {
+		min-height: 250px;
+		h1 {
+			padding-top: 20px;
+			padding-left: 20px;
+			height: 50px;
+			font-size: 22px;
+		}
+		h2 {
+			margin-top: 0px;
+			padding-left: 20px;
+			font-size: 15px;
+		}
+	}
 }

@@ -12,3 +12,20 @@ a {
     text-decoration: dashed;
     font-family: $heading-font;
 }
+
+
+@media only screen and (max-width: 48em) {
+    p{
+        font-weight: 400;
+        font-size: 15px;
+        letter-spacing: 2px;
+    }
+    
+    a {
+        color: #6fffe9;
+        text-decoration: dashed;
+        font-family: $heading-font;
+        font-size: 15px;
+        
+    }
+}

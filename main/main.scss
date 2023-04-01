@@ -2,6 +2,7 @@
 /*Test 1,2,3*/
 
 @import '../mixins/colors.scss', '../mixins/fonts.scss', '../mixins/headers.scss', '../mixins/paragraphs.scss', '../mixins/card_mixin.scss', '../mixins/paragraphs.css', '../mixins/main_mixins.scss';
+
 .main {
         border: 5px solid $secondary-color;
         //box-shadow: 0 15px 0 green;
@@ -10,85 +11,210 @@
         // outline-offset:-20px;  
         border-top: none;
         border-bottom-right-radius: 10px;
-	border-bottom-left-radius: 10px;
-        
-}
-.explanation {
-    @include wrapper(1fr 1fr, repeat(2, min-max(100px, auto)));
-	
-	h3 {
-        @include header(0px);
-	}
-	p:nth-child(2) {
-        @include paragraph_mixin(2, 1);
-        margin-right: 50px;
-	}
+        border-bottom-left-radius: 10px;
 
-	p:nth-child(3) {
-        @include paragraph_mixin(2, 2);
-	}
+}
+
+.explanation {
+
+        @include wrapper(1fr 1fr, repeat(2, min-max(100px, auto)));
+        display: grid;
+        height: fit-content;
+
+        h3 {
+                @include header(0px);
+        }
+
+        p:nth-child(2) {
+                @include paragraph_mixin(2, 1);
+                margin-right: 50px;
+        }
+
+        p:nth-child(3) {
+                @include paragraph_mixin(2, 2);
+                margin-right: 50px;
+        }
 
 }
 
 .participation {
-    @include wrapper(1fr 1fr, repeat(3, min-max(100px, auto)));
+        @include wrapper(1fr 1fr, repeat(3, min-max(100px, auto)));
+        display: grid;
+        height: fit-content;
 
-	h3 {
-        @include header(0px);
-	}
+        h3 {
+                @include header(0px);
+        }
 
-    p:nth-child(2) {
-        @include paragraph_mixin(2, 1);
-	}
+        p:nth-child(2) {
+                @include paragraph_mixin(2, 1);
+                margin-right: 50px;
+        }
 
-	p:nth-child(3) {
-        @include paragraph_mixin(2, 2);
-	}
+        p:nth-child(3) {
+                @include paragraph_mixin(2, 2);
+                margin-right: 50px;
+        }
 
-    p:nth-child(4) {
-        @include paragraph_mixin(2, 3);
-	}
+        p:nth-child(4) {
+                @include paragraph_mixin(2, 3);
+                margin-right: 50px;
+        }
 }
 
 .benefits {
 
-    @include wrapper(1fr 1fr, repeat(1, min-max(100px, auto)));
+        @include wrapper(1fr 1fr, repeat(1, min-max(100px, auto)));
+        display: grid;
+        height: fit-content;
 
-    h3 {
-        @include header(0px);
-	}
+        h3 {
+                @include header(0px);
+        }
 
-    p:nth-child(2) {
-        @include paragraph_mixin(2, 1);
-	}
+        p:nth-child(2) {
+                @include paragraph_mixin(2, 1);
+                margin-right: 50px;
+        }
 }
 
 .requirements {
 
-    @include wrapper(1fr 1fr, repeat(5, min-max(100px, auto)));
+        @include wrapper(1fr 1fr, repeat(5, min-max(100px, auto)));
+        display: grid;
+        height: fit-content;
 
-    h3 {
-        @include header(0px);
-	}
+        h3 {
+                @include header(0px);
+        }
 
-    p:nth-child(2) {
-        @include paragraph_mixin(2, 1);
-	}
+        p:nth-child(2) {
+                @include paragraph_mixin(2, 1);
+                margin-right: 50px;
+        }
 
-	p:nth-child(3) {
-        @include paragraph_mixin(2, 2);
-	}
+        p:nth-child(3) {
+                @include paragraph_mixin(2, 2);
+                margin-right: 50px;
+        }
 
-    p:nth-child(4) {
-        @include paragraph_mixin(2, 3);
-	}
+        p:nth-child(4) {
+                @include paragraph_mixin(2, 3);
+                margin-right: 50px;
+        }
 
-    p:nth-child(5) {
-        @include paragraph_mixin(2, 4);
-	}
+        p:nth-child(5) {
+                @include paragraph_mixin(2, 4);
+                margin-right: 50px;
+        }
 
-	p:nth-child(6) {
-       display: none;
-	}
+        p:nth-child(6) {
+                display: none;
+        }
 
+}
+
+
+// @media only screen and (max-width: 64em) {
+//         .explanation {
+//                 padding-top: 550px;
+
+//             }
+
+//         .main {
+//                 margin-top: 500px;
+//                 padding-bottom: 50px;
+//         }
+
+// }
+
+
+@media only screen and (max-width: 48em) {
+
+        .explanation {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                h3 {
+                        align-self: center;
+                        margin: 20px;
+                }
+                p:nth-child(2) {
+                        margin: 0px 50px 0px 50px;
+                }
+
+                p:nth-child(3) {
+                        margin: 0px 50px 0px 50px;
+                }
+        }
+
+        .participation {
+                display: flex;
+                flex-direction: column;
+                h3 {
+                        align-self: center;
+                        margin: 20px;
+                }
+
+                p:nth-child(2) {
+                        margin: 0px 50px 0px 50px;
+                }
+
+                p:nth-child(3) {
+                        margin: 0px 50px 0px 50px;
+                }
+
+                p:nth-child(4) {
+                        margin: 0px 50px 0px 50px;
+                }
+        }
+
+        .benefits {
+                display: flex;
+                flex-direction: column;
+                h3 {
+                        align-self: center;
+                        margin: 20px;
+                }
+
+                p:nth-child(2) {
+                        margin: 0px 50px 0px 50px;
+                }
+        }
+        
+
+        .requirements {
+                display: flex;
+                flex-direction: column;
+                h3 {
+                        align-self: center;
+                        margin: 20px;
+                }
+
+                p:nth-child(2) {
+                        margin: 0px 50px 0px 50px;
+                }
+
+                p:nth-child(3) {
+                        margin: 0px 50px 0px 50px;
+                }
+
+                p:nth-child(4) {
+                        margin: 0px 50px 0px 50px;
+                }
+
+                p:nth-child(5) {
+                        margin: 0px 50px 0px 50px;
+                }
+
+                p:nth-child(6) {
+                        display: none;
+                }
+        }
+
+}
+
+@media only screen and (max-width: 40em) {
+	
 }

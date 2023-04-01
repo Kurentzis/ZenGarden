@@ -43,7 +43,7 @@ $card_bg_header_height: 70px;
 
 
 .design-selection {
-	@include card();
+	@include card(320px, 450px);
 
 }
 
@@ -94,7 +94,6 @@ nav[role=navigation] a {
 	font-size: 13px;
 	text-decoration: none;
 	//color: aliceblue;
-
 	line-height: 200%;
 	letter-spacing: 0.09em;
 	text-decoration-line: underline;
@@ -146,7 +145,7 @@ nav[role=navigation] ul>li {
 
 /* ---------SECOND CARD*----------------*/
 .design-archives {
-	@include card();
+	@include card(320px, 450px);
 }
 
 .archives {
@@ -212,7 +211,7 @@ nav[role=navigation] ul>li {
 /*----------------------Third for you*----------------------/
 /* whole card with two sides */
 #zen-resources {
-	@include card();
+	@include card(320px, 450px);
 }
 
 
@@ -283,7 +282,7 @@ footer {
 	flex-flow: column;
 	min-height: fit-content;
 	justify-content: space-between;
-	gap: 10px;
+	gap: 40px;
 	margin-left: 10px;
 	padding-bottom: 10px;
 	max-width: 75px;
@@ -295,28 +294,193 @@ footer {
 		white-space: nowrap;
 		overflow: hidden;
 
-			
+
 		&.zen-validate-html {
 			@include footer('../Assets/Vectorhtml.svg');
+			// height: 75px;
 
 		}
-		
+
 		&.zen-validate-css {
 			@include footer('../Assets/Vector_css.svg');
+			// height: 75px;
 		}
 
 		&.zen-license {
 			@include footer('../Assets/Vectorcc.svg');
+			// height: 75px;
 		}
 
 		&.zen-accessibility {
 			@include footer('../Assets/Vector_acc.svg');
+			// height: 75px;
 		}
 
 		&.zen-github {
 			@include footer('../Assets/Vector_git.svg');
+			// height: 75px;
 		}
 
+	}
+
 }
+
+
+@media only screen and (max-width: 64em) {
+	$card_bg_header_width: 230px;
+	$card_bg_header_height: 60px;
+
+	.wrapper {
+		max-width: 1024px;
+	}
+
+	.design-archives .archives {
+		&.archives::before {
+			width: $card_bg_header_width;
+			height: $card_bg_header_height;
+		}
+	}
+
+	.design-selection>.select {
+		&.select::before {
+			width: $card_bg_header_width;
+			height: $card_bg_header_height;
+		}
+	}
+
+	#zen-resources .resources {
+		&.resources::before {
+			content: '';
+			width: $card_bg_header_width;
+			height: $card_bg_header_height;
+
+		}
+	}
+
+	.design-selection {
+		width: 280px;
+		height: 410px;
+
+	}
+
+	.design-archives {
+		width: 280px;
+		height: 410px;
+	}
+
+	#zen-resources {
+		width: 280px;
+		height: 410px;
+	}
+
+}
+
+
+
+@media only screen and (max-width: 48em) {
+	$card_bg_header_width: 200px;
+	$card_bg_header_height: 50px;
+
+	.wrapper {
+		max-width: 768px;
+	}
+
+	.design-archives .archives {
+		&.archives::before {
+			width: $card_bg_header_width;
+			height: $card_bg_header_height;
+		}
+	}
+
+	.design-selection>.select {
+		&.select::before {
+			width: $card_bg_header_width;
+			height: $card_bg_header_height;
+		}
+	}
+
+	#zen-resources .resources {
+		&.resources::before {
+			content: '';
+			width: $card_bg_header_width;
+			height: $card_bg_header_height;
+
+		}
+	}
+
+	.design-selection {
+		width: 300px;
+		height: 300px;
+		margin-bottom: 0px;
+
+	}
+
+	.design-archives {
+		width: 300px;
+		height: 300px;
+		margin-bottom: 0px;
+	}
+
+	#zen-resources {
+		width: 300px;
+		height: 300px;
+		margin-bottom: 0px;
+	}
+
+
+	nav[role=navigation] a {
+		font-size: 10px;
+	}
+
+	.wrapper {
+		display: flex;
+		flex-direction: column;
+		min-height: 1200px;
+
+		&::before {
+			max-width: 600px;
+			min-height: 100px;
+			margin-bottom: 1000px;
+			font-weight: 400;
+			font-size: 23px;
+		}
+	}
+
+	.design-selection {
+		margin-top: 200px;
+
+	}
+	.select {
+		font-size: 22px;
+	}
+
+	footer {
+		display: flex;
+		flex-flow: row;
+		min-height: fit-content;
+		justify-content: space-evenly;
+		gap: 3px;
+		margin: 20px 10px 20px 10px;
+		padding-bottom: 10px;
+		max-width: 100%;
+
+
+	}
+
+}
+
+@media only screen and (max-width: 40em) {
+	
+	.wrapper {
+
+		&::before {
+			font-size: 18px;
+		}
+	}
+	.design-selection {
+		margin-top: 250px;
+
+	}
+
 
 }

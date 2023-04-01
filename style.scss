@@ -21,3 +21,31 @@ body{
 	width: 100%;
 }
 
+@media only screen and (max-width: 64em) {
+	html {
+		max-width: 1024px;
+	}
+
+	body{
+		max-width: 1024px;
+		background-color: #292929;
+		
+	}
+
+}
+
+
+@media only screen and (max-width: 48em) {
+	html {
+		max-width: 768px;
+	}
+
+	body{
+		max-width: 768px;
+		background-color: #292929;
+		
+	}
+}
+
+
+

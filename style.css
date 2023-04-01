@@ -35,10 +35,23 @@ h1 {
   font-weight: 600;
   font-size: 6vw;
   letter-spacing: -0.025em;
-  padding-top: 200px;
-  padding-left: 100px;
 }
 
+@media only screen and (max-width: 64em) {
+  h3 {
+    font-size: 26px;
+  }
+}
+@media only screen and (max-width: 48em) {
+  h3 {
+    font-size: 22px;
+  }
+}
+@media only screen and (min-width: 40em) {
+  h3 {
+    font-size: 22px;
+  }
+}
 p {
   display: inline;
   font-family: "Montserrat", sans-serif;
@@ -55,6 +68,20 @@ a {
   font-family: "Orbitron", sans-serif;
 }
 
+@media only screen and (max-width: 48em) {
+  p {
+    font-weight: 400;
+    font-size: 15px;
+    letter-spacing: 2px;
+  }
+  a {
+    color: #6fffe9;
+    -webkit-text-decoration: dashed;
+            text-decoration: dashed;
+    font-family: "Orbitron", sans-serif;
+    font-size: 15px;
+  }
+}
 /* Andrew Wright's section */
 /*Test 1,2,3*/
 h3 {
@@ -82,10 +109,23 @@ h1 {
   font-weight: 600;
   font-size: 6vw;
   letter-spacing: -0.025em;
-  padding-top: 200px;
-  padding-left: 100px;
 }
 
+@media only screen and (max-width: 64em) {
+  h3 {
+    font-size: 26px;
+  }
+}
+@media only screen and (max-width: 48em) {
+  h3 {
+    font-size: 22px;
+  }
+}
+@media only screen and (min-width: 40em) {
+  h3 {
+    font-size: 22px;
+  }
+}
 p {
   display: inline;
   font-family: "Montserrat", sans-serif;
@@ -102,6 +142,20 @@ a {
   font-family: "Orbitron", sans-serif;
 }
 
+@media only screen and (max-width: 48em) {
+  p {
+    font-weight: 400;
+    font-size: 15px;
+    letter-spacing: 2px;
+  }
+  a {
+    color: #6fffe9;
+    -webkit-text-decoration: dashed;
+            text-decoration: dashed;
+    font-family: "Orbitron", sans-serif;
+    font-size: 15px;
+  }
+}
 .main {
   border: 5px solid #56FF67;
   border-top: none;
@@ -110,13 +164,14 @@ a {
 }
 
 .explanation {
-  background-color: #292929;
   display: grid;
-  height: -moz-fit-content;
-  height: fit-content;
+  background-color: #292929;
   padding-top: 50px;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: repeat(2, min-max(100px, auto));
+  display: grid;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 .explanation h3 {
   max-width: 400px;
@@ -130,7 +185,6 @@ a {
   grid-column: 2;
   grid-row: 1;
   margin-right: 50px;
-  margin-right: 50px;
 }
 .explanation p:nth-child(3) {
   grid-column: 2;
@@ -139,13 +193,14 @@ a {
 }
 
 .participation {
-  background-color: #292929;
   display: grid;
-  height: -moz-fit-content;
-  height: fit-content;
+  background-color: #292929;
   padding-top: 50px;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: repeat(2, min-max(100px, auto));
+  display: grid;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 .participation h3 {
   max-width: 400px;
@@ -172,13 +227,14 @@ a {
 }
 
 .benefits {
-  background-color: #292929;
   display: grid;
-  height: -moz-fit-content;
-  height: fit-content;
+  background-color: #292929;
   padding-top: 50px;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: repeat(2, min-max(100px, auto));
+  display: grid;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 .benefits h3 {
   max-width: 400px;
@@ -195,13 +251,14 @@ a {
 }
 
 .requirements {
-  background-color: #292929;
   display: grid;
-  height: -moz-fit-content;
-  height: fit-content;
+  background-color: #292929;
   padding-top: 50px;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: repeat(2, min-max(100px, auto));
+  display: grid;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 .requirements h3 {
   max-width: 400px;
@@ -235,6 +292,75 @@ a {
   display: none;
 }
 
+@media only screen and (max-width: 48em) {
+  .explanation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .explanation h3 {
+    align-self: center;
+    margin: 20px;
+  }
+  .explanation p:nth-child(2) {
+    margin: 0px 50px 0px 50px;
+  }
+  .explanation p:nth-child(3) {
+    margin: 0px 50px 0px 50px;
+  }
+  .participation {
+    display: flex;
+    flex-direction: column;
+  }
+  .participation h3 {
+    align-self: center;
+    margin: 20px;
+  }
+  .participation p:nth-child(2) {
+    margin: 0px 50px 0px 50px;
+  }
+  .participation p:nth-child(3) {
+    margin: 0px 50px 0px 50px;
+  }
+  .participation p:nth-child(4) {
+    margin: 0px 50px 0px 50px;
+  }
+  .benefits {
+    display: flex;
+    flex-direction: column;
+  }
+  .benefits h3 {
+    align-self: center;
+    margin: 20px;
+  }
+  .benefits p:nth-child(2) {
+    margin: 0px 50px 0px 50px;
+  }
+  .requirements {
+    display: flex;
+    flex-direction: column;
+  }
+  .requirements h3 {
+    align-self: center;
+    margin: 20px;
+  }
+  .requirements p:nth-child(2) {
+    margin: 0px 50px 0px 50px;
+  }
+  .requirements p:nth-child(3) {
+    margin: 0px 50px 0px 50px;
+  }
+  .requirements p:nth-child(4) {
+    margin: 0px 50px 0px 50px;
+  }
+  .requirements p:nth-child(5) {
+    margin: 0px 50px 0px 50px;
+  }
+  .requirements p:nth-child(6) {
+    display: none;
+  }
+}
 h3 {
   font-family: "Orbitron", sans-serif;
   color: #56FF67;
@@ -260,10 +386,23 @@ h1 {
   font-weight: 600;
   font-size: 6vw;
   letter-spacing: -0.025em;
-  padding-top: 200px;
-  padding-left: 100px;
 }
 
+@media only screen and (max-width: 64em) {
+  h3 {
+    font-size: 26px;
+  }
+}
+@media only screen and (max-width: 48em) {
+  h3 {
+    font-size: 22px;
+  }
+}
+@media only screen and (min-width: 40em) {
+  h3 {
+    font-size: 22px;
+  }
+}
 p {
   display: inline;
   font-family: "Montserrat", sans-serif;
@@ -280,6 +419,20 @@ a {
   font-family: "Orbitron", sans-serif;
 }
 
+@media only screen and (max-width: 48em) {
+  p {
+    font-weight: 400;
+    font-size: 15px;
+    letter-spacing: 2px;
+  }
+  a {
+    color: #6fffe9;
+    -webkit-text-decoration: dashed;
+            text-decoration: dashed;
+    font-family: "Orbitron", sans-serif;
+    font-size: 15px;
+  }
+}
 /*--------------------- Header---------------- */
 .intro {
   max-width: 1200px;
@@ -304,6 +457,8 @@ header h1 {
   height: 150px;
   letter-spacing: 5px;
   animation: glow 1s ease-in-out infinite alternate;
+  padding-top: 200px;
+  padding-left: 100px;
 }
 @keyframes glow {
   from {
@@ -329,10 +484,8 @@ header h1 {
 }
 
 #zen-preamble {
-  background-color: #292929;
   display: grid;
-  height: -moz-fit-content;
-  height: fit-content;
+  background-color: #292929;
   padding-top: 50px;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: repeat(2, min-max(100px, auto));
@@ -341,14 +494,6 @@ header h1 {
   border-bottom: none;
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
-}
-@media (max-width: 650px) {
-  #zen-preamble {
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
-    text-align: center;
-    padding: 0px 10px;
-  }
 }
 #zen-preamble h3 {
   max-width: 400px;
@@ -376,6 +521,57 @@ header h1 {
   margin-top: 7px;
 }
 
+@media only screen and (max-width: 64em) {
+  header {
+    min-height: 500px;
+  }
+  header h1 {
+    padding-top: 100px;
+  }
+}
+@media only screen and (max-width: 48em) {
+  header {
+    min-height: 450px;
+  }
+  header h1 {
+    padding-top: 100px;
+  }
+  #zen-preamble {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-items: center;
+  }
+  #zen-preamble h3 {
+    margin: 0px 50px 20px 50px;
+    align-self: center;
+  }
+  #zen-preamble p:nth-child(2) {
+    margin: 0px 50px 0px 50px;
+  }
+  #zen-preamble p:nth-child(3) {
+    margin: 0px 50px 0px 50px;
+  }
+  #zen-preamble p:nth-child(4) {
+    margin: 0px 50px 0px 50px;
+  }
+}
+@media only screen and (max-width: 40em) {
+  header {
+    min-height: 250px;
+  }
+  header h1 {
+    padding-top: 20px;
+    padding-left: 20px;
+    height: 50px;
+    font-size: 22px;
+  }
+  header h2 {
+    margin-top: 0px;
+    padding-left: 20px;
+    font-size: 15px;
+  }
+}
 h3 {
   font-family: "Orbitron", sans-serif;
   color: #56FF67;
@@ -401,10 +597,23 @@ h1 {
   font-weight: 600;
   font-size: 6vw;
   letter-spacing: -0.025em;
-  padding-top: 200px;
-  padding-left: 100px;
 }
 
+@media only screen and (max-width: 64em) {
+  h3 {
+    font-size: 26px;
+  }
+}
+@media only screen and (max-width: 48em) {
+  h3 {
+    font-size: 22px;
+  }
+}
+@media only screen and (min-width: 40em) {
+  h3 {
+    font-size: 22px;
+  }
+}
 p {
   display: inline;
   font-family: "Montserrat", sans-serif;
@@ -421,6 +630,20 @@ a {
   font-family: "Orbitron", sans-serif;
 }
 
+@media only screen and (max-width: 48em) {
+  p {
+    font-weight: 400;
+    font-size: 15px;
+    letter-spacing: 2px;
+  }
+  a {
+    color: #6fffe9;
+    -webkit-text-decoration: dashed;
+            text-decoration: dashed;
+    font-family: "Orbitron", sans-serif;
+    font-size: 15px;
+  }
+}
 .wrapper {
   display: flex;
   flex-direction: row;
@@ -738,7 +961,7 @@ footer {
   min-height: -moz-fit-content;
   min-height: fit-content;
   justify-content: space-between;
-  gap: 10px;
+  gap: 40px;
   margin-left: 10px;
   padding-bottom: 10px;
   max-width: 75px;
@@ -759,6 +982,20 @@ footer a.zen-validate-html:hover {
   scale: 1.2;
   transition: 0.5s;
 }
+@media only screen and (max-width: 48em) {
+  footer a.zen-validate-html {
+    background-size: auto 75px;
+    background-repeat: no-repeat;
+    height: 75px;
+    width: 75px;
+  }
+}
+@media only screen and (max-width: 40em) {
+  footer a.zen-validate-html {
+    background-size: auto 50px;
+    height: 50px;
+  }
+}
 footer a.zen-validate-css {
   background-image: url("../Assets/Vector_css.svg");
   background-size: auto 75px;
@@ -769,6 +1006,20 @@ footer a.zen-validate-css {
 footer a.zen-validate-css:hover {
   scale: 1.2;
   transition: 0.5s;
+}
+@media only screen and (max-width: 48em) {
+  footer a.zen-validate-css {
+    background-size: auto 75px;
+    background-repeat: no-repeat;
+    height: 75px;
+    width: 75px;
+  }
+}
+@media only screen and (max-width: 40em) {
+  footer a.zen-validate-css {
+    background-size: auto 50px;
+    height: 50px;
+  }
 }
 footer a.zen-license {
   background-image: url("../Assets/Vectorcc.svg");
@@ -781,6 +1032,20 @@ footer a.zen-license:hover {
   scale: 1.2;
   transition: 0.5s;
 }
+@media only screen and (max-width: 48em) {
+  footer a.zen-license {
+    background-size: auto 75px;
+    background-repeat: no-repeat;
+    height: 75px;
+    width: 75px;
+  }
+}
+@media only screen and (max-width: 40em) {
+  footer a.zen-license {
+    background-size: auto 50px;
+    height: 50px;
+  }
+}
 footer a.zen-accessibility {
   background-image: url("../Assets/Vector_acc.svg");
   background-size: auto 75px;
@@ -791,6 +1056,20 @@ footer a.zen-accessibility {
 footer a.zen-accessibility:hover {
   scale: 1.2;
   transition: 0.5s;
+}
+@media only screen and (max-width: 48em) {
+  footer a.zen-accessibility {
+    background-size: auto 75px;
+    background-repeat: no-repeat;
+    height: 75px;
+    width: 75px;
+  }
+}
+@media only screen and (max-width: 40em) {
+  footer a.zen-accessibility {
+    background-size: auto 50px;
+    height: 50px;
+  }
 }
 footer a.zen-github {
   background-image: url("../Assets/Vector_git.svg");
@@ -803,7 +1082,124 @@ footer a.zen-github:hover {
   scale: 1.2;
   transition: 0.5s;
 }
+@media only screen and (max-width: 48em) {
+  footer a.zen-github {
+    background-size: auto 75px;
+    background-repeat: no-repeat;
+    height: 75px;
+    width: 75px;
+  }
+}
+@media only screen and (max-width: 40em) {
+  footer a.zen-github {
+    background-size: auto 50px;
+    height: 50px;
+  }
+}
 
+@media only screen and (max-width: 64em) {
+  .wrapper {
+    max-width: 1024px;
+  }
+  .design-archives .archives.archives::before {
+    width: 230px;
+    height: 60px;
+  }
+  .design-selection > .select.select::before {
+    width: 230px;
+    height: 60px;
+  }
+  #zen-resources .resources.resources::before {
+    content: "";
+    width: 230px;
+    height: 60px;
+  }
+  .design-selection {
+    width: 280px;
+    height: 410px;
+  }
+  .design-archives {
+    width: 280px;
+    height: 410px;
+  }
+  #zen-resources {
+    width: 280px;
+    height: 410px;
+  }
+}
+@media only screen and (max-width: 48em) {
+  .wrapper {
+    max-width: 768px;
+  }
+  .design-archives .archives.archives::before {
+    width: 200px;
+    height: 50px;
+  }
+  .design-selection > .select.select::before {
+    width: 200px;
+    height: 50px;
+  }
+  #zen-resources .resources.resources::before {
+    content: "";
+    width: 200px;
+    height: 50px;
+  }
+  .design-selection {
+    width: 300px;
+    height: 300px;
+    margin-bottom: 0px;
+  }
+  .design-archives {
+    width: 300px;
+    height: 300px;
+    margin-bottom: 0px;
+  }
+  #zen-resources {
+    width: 300px;
+    height: 300px;
+    margin-bottom: 0px;
+  }
+  nav[role=navigation] a {
+    font-size: 10px;
+  }
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 1200px;
+  }
+  .wrapper::before {
+    max-width: 600px;
+    min-height: 100px;
+    margin-bottom: 1000px;
+    font-weight: 400;
+    font-size: 23px;
+  }
+  .design-selection {
+    margin-top: 200px;
+  }
+  .select {
+    font-size: 22px;
+  }
+  footer {
+    display: flex;
+    flex-flow: row;
+    min-height: -moz-fit-content;
+    min-height: fit-content;
+    justify-content: space-evenly;
+    gap: 3px;
+    margin: 20px 10px 20px 10px;
+    padding-bottom: 10px;
+    max-width: 100%;
+  }
+}
+@media only screen and (max-width: 40em) {
+  .wrapper::before {
+    font-size: 18px;
+  }
+  .design-selection {
+    margin-top: 250px;
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -823,4 +1219,23 @@ body {
 
 .sidebar {
   width: 100%;
+}
+
+@media only screen and (max-width: 64em) {
+  html {
+    max-width: 1024px;
+  }
+  body {
+    max-width: 1024px;
+    background-color: #292929;
+  }
+}
+@media only screen and (max-width: 48em) {
+  html {
+    max-width: 768px;
+  }
+  body {
+    max-width: 768px;
+    background-color: #292929;
+  }
 }/*# sourceMappingURL=style.css.map */
