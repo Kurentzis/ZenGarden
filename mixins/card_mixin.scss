@@ -41,7 +41,7 @@
 	transition: 1s;
 	transform: rotateY(180deg);
 	border-radius: 20px;
-	border: 2px solid $blue;
+	//border: 2px solid $blue;
 	box-sizing: border-box;
 	background-color: #1B2429;
 
@@ -61,7 +61,7 @@
 @mixin back-side-hover {
 	transform: rotateY(360deg);
 	background-color: #0b0e0f;
-	//border: 2px solid $blue;
+	border: 2px solid $blue;
     border-radius: 20px;
 	
 }
