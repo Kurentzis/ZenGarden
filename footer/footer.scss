@@ -9,6 +9,8 @@ $card_bg_header_height: 70px;
 	justify-content: space-around;
 	align-items: center;
 	background-image: url('../Assets/mw2.jpg');
+	backdrop-filter: brightness(-0.5) contrast(130%);
+	border-radius: 10px;
 	background-size: auto 100%;
 	max-width: 1200px;
 	height: fit-content;
@@ -284,7 +286,7 @@ footer {
 	gap: 10px;
 	margin-left: 10px;
 	padding-bottom: 10px;
-	max-width: 50px;
+	max-width: 75px;
 
 
 
@@ -315,5 +317,6 @@ footer {
 			@include footer('../Assets/Vector_git.svg');
 		}
 
-		}
+}
+
 }

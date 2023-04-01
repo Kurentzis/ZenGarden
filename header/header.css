@@ -23,11 +23,10 @@ h1 {
   font-family: "Bebas Neue";
   color: #F2F6F8;
   font-weight: 600;
-  font-size: 5vw;
+  font-size: 6vw;
   letter-spacing: -0.025em;
   padding-top: 200px;
   padding-left: 100px;
-  text-shadow: 0px 5px 10px #017f6c;
 }
 
 p {
@@ -59,13 +58,12 @@ header {
   min-height: 850px;
   background-image: url("../Assets/header3.png");
   background-size: 100%;
-  background-repeat: no-repeat;
+  border-radius: 10px;
   -o-object-fit: cover;
      object-fit: cover;
   background-clip: initial;
-  -webkit-backdrop-filter: brightness(0.6) contrast(120%);
-          backdrop-filter: brightness(0.6) contrast(120%);
-  border-bottom: 3px solid #292929;
+  -webkit-backdrop-filter: brightness(0.1) contrast(130%);
+          backdrop-filter: brightness(0.1) contrast(130%);
 }
 header h1 {
   height: 150px;
@@ -74,10 +72,10 @@ header h1 {
 }
 @keyframes glow {
   from {
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #56FF67, 0 0 40px #56FF67, 0 0 50px #56FF67, 0 0 60px #56FF67, 0 0 70px #56FF67;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #ED9B40, 0 0 40px #ED9B40, 0 0 50px #ED9B40, 0 0 60px #ED9B40, 0 0 70px #ED9B40;
   }
   to {
-    text-shadow: 0 0 20px #fff, 0 0 30px #6fffe9, 0 0 40px #6fffe9, 0 0 50px #6fffe9, 0 0 60px #6fffe9, 0 0 70px #6fffe9, 0 0 80px #6fffe9;
+    text-shadow: 0 0 20px #fff, 0 0 30px #ffd046, 0 0 40px #ffd046, 0 0 50px #ffd046, 0 0 60px #ffd046, 0 0 70px #ffd046, 0 0 80px #ffd046;
   }
 }
 
@@ -104,6 +102,7 @@ header h1 {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: repeat(2, min-max(100px, auto));
   border: 5px solid rgb(79, 239, 79);
+  border-bottom: none;
   border-bottom: none;
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;

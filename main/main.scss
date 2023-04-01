@@ -3,7 +3,7 @@
 
 @import '../mixins/colors.scss', '../mixins/fonts.scss', '../mixins/headers.scss', '../mixins/paragraphs.scss', '../mixins/card_mixin.scss', '../mixins/paragraphs.css', '../mixins/main_mixins.scss';
 .main {
-        //border: 5px solid green;
+        border: 5px solid $secondary-color;
         //box-shadow: 0 15px 0 green;
         // outline: 5px solid green;
 

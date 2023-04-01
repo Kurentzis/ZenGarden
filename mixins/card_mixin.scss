@@ -41,7 +41,9 @@
 	transition: 1s;
 	transform: rotateY(180deg);
 	border-radius: 20px;
-	background-color: black;
+	border: 2px solid $blue;
+	box-sizing: border-box;
+	background-color: #1B2429;
 
 	
 	text-decoration: none;
@@ -58,8 +60,10 @@
 
 @mixin back-side-hover {
 	transform: rotateY(360deg);
-	background-color: black;
+	background-color: #0b0e0f;
+	//border: 2px solid $blue;
     border-radius: 20px;
+	
 }
 
 
@@ -71,9 +75,11 @@
 		transition: 0.5s;
 	}
 	background-image: url($img);
-	background-size: auto 50px;
+	background-size: auto 75px;
 	background-repeat: no-repeat;
-	height: 50px;
+	height: 75px;
+	
 	filter: invert(0%) sepia(0%) saturate(1352%) hue-rotate(77deg) brightness(100%) contrast(119%);
+
 }
 
